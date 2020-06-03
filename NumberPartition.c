@@ -9,7 +9,7 @@ void partitionHelper(int finalSum, int currentSum, int depth, int array[finalSum
         printf("%d x %d\n", finalSum, array[finalSum-1]);
         return;
     }
-    if(depth > finalSum)
+   if(currentSum > finalSum || depth > finalSum)
         return;
     int numTerms = finalSum/depth;
     for(int i = 0; i <= numTerms; i++){
