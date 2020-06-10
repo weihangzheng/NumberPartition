@@ -26,6 +26,7 @@ void partition(int finalSum){
     printf("\npartition of %d:\n", finalSum);
     int *array = malloc(finalSum * sizeof(int));
     partitionHelper(finalSum, 0, 1, array, count);
+    free(array);
     printf("%d combinations\n\n", count[0]);
 }
 
